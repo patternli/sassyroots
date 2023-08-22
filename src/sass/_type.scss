@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,400;1,100&display=swap');
+
+.font {
+  font-family: 'Poppins', sans-serif;
+}
+.font-alt {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+body {
+  font-size: 1rem;
+  @extend .font;
+}
+
+.display, h1, h3, h5 {
+  @extend .font-alt;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  border-bottom: dotted;
+  &:hover {
+    border: none;
+    color: $prime-light;
+  }
+}
+
+
+.btn {
+  color: $paper;
+  background-color: $link;
+  padding: 10px 5px ;
+  border-radius: 6px;
+  border: none;
+  &:hover {
+    background-color: $prime-light;
+  }
+}
+
+.btn-second {
+  color: $paper;
+  background-color: $accent;
+  &:hover {
+    background-color: $prime-light;
+  }
+}
+
+.btn-outline {
+  color: $link;
+  border: $link 1px solid;
+  background-color: $paper;
+  &:hover {
+    color: $prime-light;
+    border: $prime-light 1px solid;
+    background-color: $paper;
+  }
+}

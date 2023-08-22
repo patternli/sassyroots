@@ -5,7 +5,7 @@ title: Notebooks - Sassy Roots Apothecary
 <style>
   img {max-width: 100% }
 </style>
-![Coming Soon](/imgs/soon-thin.png)
+![Coming Soon](/src/imgs/soon-thin.png)
 
 The Sassy Roots Apothecary website is coming soon.
 
