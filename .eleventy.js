@@ -1,8 +1,10 @@
-const markdownItEmoji = require("markdown-it-emoji");
-
+const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/imgs");
+
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+  
 
   eleventyConfig.addFilter("renderRichTextAsHtml", (value) =>
     documentToHtmlString(value)
@@ -13,6 +15,9 @@ module.exports = function (eleventyConfig) {
     files: './_site/css/**/*.css'
   });
   
+  //shortcodes
+  eleventyConfig.addShortcode('icon', (arg) => `<i class="${arg}"></i>`);
+
   eleventyConfig.addPassthroughCopy("css");
 
   /**************** Markdown Plugins********************/
@@ -25,7 +30,7 @@ module.exports = function (eleventyConfig) {
   };
   let markdownLib = markdownIt(options).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLib);
-  eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItEmoji));
+
   return {
     passthroughFileCopy: true,
     dir: {

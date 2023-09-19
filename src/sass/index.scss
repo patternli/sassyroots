@@ -1,3 +1,19 @@
-@import 'colors', 'type';
+@import 'colors', 'type','grid', 'patterns/header', 'patterns/footer';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 img { max-width: 100% }
+

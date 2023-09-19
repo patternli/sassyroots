@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Sassy Roots Apothecary</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/cb5b5cdb42.css" crossorigin="anonymous">
   </head>
   <body>
+    {% include 'patterns/header.njk'  %}
     {{ content | safe }}
+
+    {% include 'patterns/footer.njk' %}
   </body>
 </html>

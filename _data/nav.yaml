@@ -1,0 +1,31 @@
+nav:
+  - title: home
+    href: /home/
+  - title: articles
+    href: /
+  - title: learn
+    href: /
+  - title: community
+    href: /
+  - title: consultations
+    href: /
+  - title: shop
+    href: /
+
+foot:
+  - title: past issues
+    href: /
+  - title: recipe index
+    href: /
+  - title: membership
+    href: /
+  - title: tutorials
+    href: /
+  - title: subscription boxes
+    href: /
+  - title: journals
+    href: /
+  - title: t-shirts
+    href: /
+  - title: supplies
+    href: /

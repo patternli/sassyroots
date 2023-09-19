@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="logo" alt="Sassy Roots Apothecary logo and link to home page"><a href="/"><img src="/src/imgs/logo-light.png" /></a></div>
+  <div class="topnav" id="myTopnav">
+    {% for item in nav.nav %}
+      <a href="{{ item.href}}"
+      {% if page.url == item.href %}
+        class="active"
+      {% endif %}
+      > {{ item.title }}</a>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<style>
+  .foot {
+    background-color: $prime;
+  }
+</style>
+<div class="foot">
+  <div class="foot-logo">
+    <img src="/src/imgs/logo-light.png">
+  </div>
+  <div class="foot-nav">
+    <ul>
+    {% for item in nav.foot %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="foot-copy">
+    &copy 2023 Lorem Ipsum Page. All rights reserved.
+  </div>
+</div>
