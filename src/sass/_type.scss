@@ -19,6 +19,10 @@ body {
   @extend .font-alt;
 }
 
+.font-xs {
+  font-size: .75rem;
+}
+
 a {
   color: $link;
   text-decoration: none;
